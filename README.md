@@ -53,7 +53,14 @@ Currently two protocols are implemented: OPC and ESP. OPC stands for [OpenPixelC
 
 # Dependencies
 ## rpi-many-ws2812b
-For the RaspberryPi the library [rpi-many-ws2812b](https://github.com/lukaslihotzki/rpi-many-ws2812b) is used which allows high performance control of multiple LED strips from a single Pi. The library is set up as a submodule in this repository. 
+For the RaspberryPi the library [rpi-many-ws2812b](https://github.com/lukaslihotzki/rpi-many-ws2812b) is used which allows high performance control of multiple LED strips from a single Pi.
+
+The library is set up as a submodule in this repository. To clone the submodule execute the following steps:
+```bash
+cd rpi-many-ws2812b
+git submodule init
+git submodule update
+``` 
 
 ## Boost
 For RaspberryPi you can install boost using the following command:
