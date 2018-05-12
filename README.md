@@ -52,10 +52,10 @@ Two servers are set up through which data streams are accepted. TCP servers can 
 Currently two protocols are implemented: OPC and ESP. OPC stands for [OpenPixelControl](http://openpixelcontrol.org/). The ESP protocol is an imitation of the interpreter implemented in the firmware [esp8266ws2812i2s](https://github.com/cnlohr/esp8266ws2812i2s).
 
 # Dependencies
+## rpi-many-ws2812b
 For the RaspberryPi the library [rpi-many-ws2812b](https://github.com/lukaslihotzki/rpi-many-ws2812b) is used which allows high performance control of multiple LED strips from a single Pi. The library is set up as a submodule in this repository. 
 
-Additional dependencies: boost.
-
+## Boost
 For RaspberryPi you can install boost using the following command:
 
 ```bash
