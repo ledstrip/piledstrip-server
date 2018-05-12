@@ -1,5 +1,6 @@
 # piledstrip-server
 piledstrip-server is the link between low performance hardware (e.g. RaspberryPi Zero) controlling WS2812b LED strips and high performance hardware (e.g. your laptop).
+
 piledstrip-server opens UDP / TCP servers allowing you to stream cool effects from your computer (e.g. using [pyledstrip](https://github.com/ledstrip/pyledstrip)).
 
 # How to use?
@@ -47,6 +48,7 @@ Here is an exemplary JSON configuration file:
 This file configures two LED strips with length of 300 LEDs each. Please note the first LED strip is marked as flipped. This is important as piledstrip-server exposes multiple strips as one single long strip for easy interfacing. Using the flip option you can ensure proper concatenation.
 
 Two servers are set up through which data streams are accepted. TCP servers can handle data for strips with a total of ***insert large number here*** LEDs as TCP handles the proper grouping of multiple splitted network packets for you. With UDP you are limited to ***insert not so large number here*** LEDs as the maximum payload for UDP packages is 65507 bytes.
+
 Currently two protocols are implemented: OPC and ESP. OPC stands for [OpenPixelControl](http://openpixelcontrol.org/). The ESP protocol is an imitation of the interpreter implemented in the firmware [esp8266ws2812i2s](https://github.com/cnlohr/esp8266ws2812i2s).
 
 # Dependencies
@@ -71,6 +73,7 @@ make
 
 # Compatibility
 In the current state the project is configured to work with a RaspberryPi but extension to other platforms is trivially possible. Simply copy the DemoInterface.cpp/.h and integrate the GPIO controlling library.
+
 If you add other hardware support pull requests are welcome!
 
 # License
