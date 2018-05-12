@@ -67,4 +67,4 @@ In the current state the project is configured to work with a RaspberryPi but ex
 If you add other hardware support pull requests are welcome!
 
 # License
-This project is published under the MIT license
+This project is published under the MIT license. Please notice that rpi-many-ws2812b is licensed under the GPL-3.0.
