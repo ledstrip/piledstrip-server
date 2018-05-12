@@ -54,6 +54,12 @@ For the RaspberryPi the library [rpi-many-ws2812b](https://github.com/lukaslihot
 
 Additional dependencies: boost.
 
+For RaspberryPi you can install boost using the following command:
+
+```bash
+sudo apt install libboost-all-dev
+```
+
 # Build
 This is a C++ project based on CMake using modern C++ features (at least C++11). The simplest (and slowest) method is to check out the code on the RaspberryPi, install the dependencies and then follow these steps:
 
