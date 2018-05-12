@@ -1,0 +1,3 @@
+[submodule "rpi-many-ws2812b"]
+	path = rpi-many-ws2812b
+	url = https://github.com/lukaslihotzki/rpi-many-ws2812b.git
