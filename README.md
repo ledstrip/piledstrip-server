@@ -72,7 +72,7 @@ make
 ```
 
 # Compatibility
-In the current state the project is configured to work with a RaspberryPi but extension to other platforms is trivially possible. Simply copy the DemoInterface.cpp/.h and integrate the GPIO controlling library.
+In the current state the project is configured to work with a RaspberryPi but extension to other platforms is trivially possible. Simply copy the `DemoInterface.cpp` and `DemoInterface.h` and integrate the GPIO controlling library.
 
 If you add other hardware support pull requests are welcome!
 
