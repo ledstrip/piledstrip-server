@@ -14,7 +14,8 @@ Sudo is required as use of GPIOs, DMA etc. by default requires root permissions.
 For details on which GPIOs are used in the RaspberryPi case please check out the [rpi-many-ws2812b](https://github.com/lukaslihotzki/rpi-many-ws2812b) library readme.
 
 ## Configuration
-A JSON configuration file must be provided which
+A JSON configuration file must be provided. By default piledstrip-server expects the file to be in the current working directory named `config.json`.
+
 Here is an exemplary JSON configuration file:
 ```json
 {
